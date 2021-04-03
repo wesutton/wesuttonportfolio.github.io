@@ -6,11 +6,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
+    <script src ="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <h1>Portfolio</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id = "navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#main_section">William Sutton</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#about_section">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects_section">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact_section">Contact</a>
+              </li>
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <section id = "main_section" >
+      <div id="main_content">
+        <h2 id = 'william_sutton'>William Sutton</h2>
+        <p id = 'web_developer'>  Web Developer</p>
+      </div>
+    </section>
+    <section id ="about_section">
+           <h1 id = about_me> About Me </h1>
+           <hr>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col">
+                    <p id = about_p>
+                        Hello World! My name is William Sutton but you can call me Will. 
+                        I am currently a student of coding and have been working with HTML, 
+                        CSS, and JavaScript. I have a passion for creativity and finding new
+                        ways for things to be done. That's the driving force behind why
+                        are started to pursue a career in Web Development through 
+                        Eleven Fifty Academy.
+                    </p>
+                </div>
+            </div>
+         </div>
+        
+      </section>
+
+      <section id = "projects_section">
+
+        
+        <h1 id= "projects_header">Projects</h1>
+        <div class = "container" id="project1">
+            <div class="row">
+                <div class = "col-md" >
+                        
+                   <a href="https://codepen.io/william-sutton/pen/OJbRYzg" target="blank">
+                    <img alt="codepen project" src="./images/codepen.png" id="p1img" width="300px" height="275px" title=>
+                    </a>
+                    
+                </div>
+                <div class = "col-md" id = "p1">
+                    <h3>CSS Creature </h3>
+                    <hr> 
+                    <p > This was built using HTML and CSS on codepen. The intended purpose
+                    was to capture how HTML and CSS is used to construct images and 
+                    to get a sense of placement on a page.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class = "container" id="project1">
+            <div class="row">
+                <div class = "col-md">
+                    <a href="https://wesutton.github.io/static_layout/" target="blank">
+                    <img alt="static layout" src="./images/kast.png" class="p1img" width="300px" height="275px">
+                    </a>
+                </div>
+                <div class = "col-md" id ="p1">
+                    <h3> Static layout</h3>
+                    <hr>
+                    <p> A website designed using HTML and CSS that displays two times the view
+                      height of the original website. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class = "container" id="project1">
+            <div class="row">
+                <div class = "col-md">
+                    <a href="https://wesutton.github.io/API_Challenge_1/" target="blank">
+                    <img alt="codepen project" src="./images/api1.png" class="p1img" width="300px" height="275px">
+                    </a>
+                </div>
+                <div class = "col-md" id = "p1">
+                    <h3> API 1 </h3>
+                    <hr>
+                    <p> A project used to pull data from an Application Programming Interface and
+                      put the data on display. Uses JavaScript, HTML, and CSS
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class = "container" id="project1">
+            <div class="row">
+                <div class = "col-md">
+                    <a href="https://codepen.io/william-sutton/pen/OJbRYzg">
+                    <img alt="codepen project" src="./images/codepen.png" class="p1img" width="300px" />
+                    </a>
+                </div>
+                <div class = "col-md" id = "p1">
+                    <h3>API 2</h3>
+                    <hr>
+                    <p> Another example of fetching from an API with an emphasis on using the to
+                      help create other functions. In this case the user can search through 
+                      a list of U.S. holidays/celebrations. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+      </section>
+
+      <section id="contact_section">
+        <h1 id ="contact_me"> Contact Me</h1>
+        <Div id = "contact_form">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoyonag" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name" id="fullname"> Full name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <br>
+              <label for="email-address" id ="email">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <br>
+              <label for="message" id="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+
+            <div id ="submit">
+            <input class= "button" type="submit" value="Submit">
+            <div>
+          </form>
+          </Div>
+      </section>
+
+
 
 
     <script src="scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 </body>
+<footer> &copy William Sutton 2021</footer>
 </html>

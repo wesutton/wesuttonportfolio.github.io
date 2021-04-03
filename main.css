@@ -1,0 +1,180 @@
+body {
+    height: fit-content;
+    font-family: 'Bitter', serif;
+    
+
+}
+
+p {
+    color: white;
+}
+
+h3 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-item {
+    float: right;
+}
+   
+
+
+#main_section{
+    background-image: url(https://images.unsplash.com/photo-1616499062101-3a7e34488ae3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2389&q=80);
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-flow: column wrap;
+    align-items: center;
+
+    
+    
+   
+}
+
+#main_content {
+    margin-bottom: 300px;
+    
+
+}
+
+#william_sutton {
+    position: relative;
+    color: rgb(217, 245, 255); 
+    text-align: center; 
+    font-size: 60px;
+    font-family: 'Titillium Web', sans-serif;
+    
+
+
+}
+
+#web_developer {
+
+    position:relative;
+    color: rgb(231, 229, 199);
+    text-align: center;
+    font-size: 25px;
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+#about_me {
+    font-family: 'Cairo', sans-serif;
+}
+
+#about_section{
+    background: rgb(190, 203, 216);
+    height: 400px;
+    text-align: center;
+    padding-top: 90px;
+
+}
+
+
+#projects_section {
+    background-color: rgb(250, 246, 231);
+    padding-bottom: 50px;
+}
+
+
+#projects_header {
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Cairo', sans-serif;
+    
+    
+
+
+}
+
+
+  
+img:hover {
+
+    opacity: .5;
+    transition: .5s ease;
+}
+
+
+
+#project1 {
+   margin-top: 50px;
+   padding-top: 50px;
+   padding-bottom: 50px;
+   height: auto;
+   text-align: center;
+   background:  rgb(190, 203, 216);
+   border-style: none;
+   border-radius: 1em;
+
+   
+   
+}
+
+#p1{
+    margin-top: 50px;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+#contact_me{
+
+    font-family: 'Cairo', sans-serif;
+    color: rgb(30, 83, 121);
+}
+
+#fs-frm-inputs{
+    color: whitesmoke;
+}
+
+#contact_section {
+  
+    background-color: rgb(190, 203, 216);
+    background-image: url();
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+
+}
+#email {
+    padding-top: 10px;
+    
+
+}
+
+.button{
+    background-color:rgb(30, 83, 121);
+   border: none;
+   color: cornsilk;
+   font-size: 1em;
+   padding: 10px 50px;
+   text-transform: uppercase;  
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   margin-left: 11px;
+
+}
+
+footer {
+
+    background-color: cornsilk;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+
+
+
+

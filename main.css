@@ -21,12 +21,14 @@ h3 {
     right: 3;
     width: 100vw;
 
+
 }
 
 .nav-item {
     float: right;
+  
 }
-   
+
 
 
 #main_section{
@@ -72,6 +74,48 @@ h3 {
 
 }
 
+.container1 {
+   
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container1 p.typetext {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container1 p.typetext span.typed-text {
+    font-weight: normal;
+    font-family: 'Cairo', sans-serif;
+    color: rgb(231, 229, 199);
+  }
+
+  .container1 p.typetext span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container1 p.typetext span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }
+
 #about_me {
     font-family: 'Cairo', sans-serif;
     color: white;
@@ -79,12 +123,50 @@ h3 {
 
 #about_section{
     background: rgb(190, 203, 216);
-    height: 400px;
+    height: fit-content;
     text-align: center;
-    padding-top: 90px;
+    padding-top: 40px;
 
 }
 
+.flex-container{   
+    background: rgb(190, 203, 216);
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+
+
+}
+.icons-container{
+    background: rgb(190, 203, 216);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: fit-content;
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+@media(max-width: 800px){
+    .flex-container{
+        flex-direction: column;
+        
+    }
+    .image-container1{
+        flex-direction: column;
+    }
+    .image-container2{
+        flex-direction: column;
+    }
+        
+}
+ #icons{
+    margin-top: 20px;
+    width: 200px;
+ }
+ #resume{
+ }
 
 #projects_section {
     background-color: rgb(250, 246, 231);
@@ -100,6 +182,13 @@ h3 {
     
 
 
+}
+
+#gdheader{
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Cairo', sans-serif;
+    margin-bottom: 40px;
 }
 
 
@@ -134,8 +223,33 @@ label, input, textarea {
     display: block;
 }
 
-#contact_me{
+#graphicdesign_section {
+    background-color: rgb(250, 246, 231);
+    padding-bottom: 50px;
+}
 
+.image-container1{
+    background-color: rgb(250, 246, 231);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.image-container2{
+    background-color: rgb(250, 246, 231);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: fit-content;
+    padding-top: 5px;
+    padding-bottom: 40px;
+}
+
+
+#contact_me{
     font-family: 'Cairo', sans-serif;
     color: white;
 }
@@ -208,6 +322,19 @@ footer {
     text-align: center;
 }
 
+#imagelarge:hover{
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(1.15); /* Safari and Chrome */
+
+}
 
 
 
